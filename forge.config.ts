@@ -17,6 +17,18 @@ const config: ForgeConfig = {
   },
   rebuildConfig: {},
   makers: [new MakerSquirrel({}), new MakerZIP({}, ['darwin']), new MakerRpm({}), new MakerDeb({})],
+  // publishers: [
+  //   {
+  //     name: '@electron-forge/publisher-github',
+  //     config: {
+  //       repository: {
+  //         owner: 'rlfahs3025@gmail.com',
+  //         name: 'PIU-StepMaker-Electron'
+  //       },
+  //       prerelease: true
+  //     }
+  //   }
+  // ],
   plugins: [
     new AutoUnpackNativesPlugin({}),
     new WebpackPlugin({
